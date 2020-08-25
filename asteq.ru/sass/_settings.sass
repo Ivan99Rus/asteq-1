@@ -1,0 +1,105 @@
+*, *:after, *:before
+  box-sizing: border-box
+
+body
+  position: relative
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-size: 16px
+  line-height: 150%
+  color: $color-base
+  
+.section-title
+  font-weight: 500
+  font-size: 36px
+  line-height: 150%
+  margin: 0
+  
+.to-up
+  position: fixed
+  transform: rotate(90deg)
+  bottom: 42px
+  left: 52px
+  text-decoration: none
+  color: $color-base
+  font-weight: 300
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  z-index: 99
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 42px
+    height: 1px
+    top: 7px
+    left: -50px
+    margin-right: 8px
+    background-color: $color-base
+
+.block
+  display: block
+
+.nav__menu
+  position: fixed
+  display: flex
+  align-items: center
+  justify-content: space-between
+  top: 85%
+  bottom: 15%
+  width: 70vh
+  z-index: 100
+  right: 80px
+  transform: rotate(90deg)
+  transform-origin: right
+  &-link
+    text-decoration: none
+    color: $color-base
+    font-weight: 300
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    display: block
+    &-line
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        width: 42px
+        height: 1px
+        top: 7px
+        right: -63px
+        margin-right: 8px
+        background-color: $color-base
+    &-next 
+      position: relative
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 42px
+        height: 1px
+        top: 7px
+        right: -62px
+        margin-right: 8px
+        background-color: #333333
+    &-prev 
+      position: relative
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        width: 42px
+        height: 1px
+        top: 7px
+        left: -62px
+        margin-right: 8px
+        background-color: #333333
+    &-no
+      &-prev
+        &::before
+          content: none
+      &-next
+        &::after
+          content: none

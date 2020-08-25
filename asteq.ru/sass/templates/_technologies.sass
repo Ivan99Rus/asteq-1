@@ -1,0 +1,41 @@
+.technologies
+  margin-top: 200px
+  overflow: hidden
+  &__row
+    margin-top: 105px
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    overflow: hidden
+  &__item
+    font-weight: 800
+    font-size: 62px
+    line-height: 76px 
+    margin-right: 199px
+    white-space: nowrap
+    transition: all .2s ease-out
+    &:hover 
+      transform: scale(1.2)
+      opacity: .5
+      cursor: pointer
+
+    &-big
+      &-space
+        margin-right: 280px
+    &-turquoise
+      color: $color-turquoise
+    &-violet
+      color: $color-violet
+    &-grey
+      color: $color-grey
+    &-stroke
+      &-gray
+        color: transparent
+        -webkit-text-stroke: 1px $color-grey
+      &-violet
+        color: transparent
+        -webkit-text-stroke: 1px $color-violet
+      &-turquoise
+        color: transparent
+        -webkit-text-stroke: 1px $color-turquoise
+
